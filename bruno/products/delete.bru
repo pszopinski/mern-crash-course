@@ -1,0 +1,18 @@
+meta {
+  name: delete
+  type: http
+  seq: 3
+}
+
+delete {
+  url: http://localhost:5000/api/products/66e30592f19e195920183d40
+  body: none
+  auth: none
+}
+
+body:json {
+  {
+    "name": "Smart Watch",
+    "price": "199.99"
+  }
+}

@@ -1,0 +1,19 @@
+meta {
+  name: create
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:5000/api/products/
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "Smart Watch",
+    "price": "199.99",
+    "image": "https://picsum.photos/id/199"
+  }
+}
