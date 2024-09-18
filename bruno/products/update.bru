@@ -1,0 +1,19 @@
+meta {
+  name: update
+  type: http
+  seq: 5
+}
+
+put {
+  url: http://localhost:5000/api/products/66eab2d55ff1265701a1b834
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "Updated Smart Watch",
+    "price": 99.99,
+    "image": "https://picsum.photos/id/42"
+  }
+}
